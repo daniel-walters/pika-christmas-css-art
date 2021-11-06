@@ -1,0 +1,144 @@
+
+.tree{
+    position: absolute;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: linear-gradient(90deg, rgb(0, 100, 0) 20%, rgba(0, 255, 0, 1) 100%);
+    z-index: 16;
+    border-bottom: 2vh solid darkgreen;
+    border-radius: 50%;
+    left: 15vw;
+}
+
+.star {
+    position: absolute;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background: linear-gradient(90deg, darkorange 20%, rgb(243, 156, 50) 100%);
+    height: 5vh;
+    width: 3vw;
+    z-index: 17;
+    left: 18.5vw;
+    top: 17vh;
+}
+
+.top-tree {
+    width: 10vw;
+    height: 17.5vh;
+    top: 20vh;
+}
+
+.mid-tree {
+    width: 15vw;
+    height: 26vh;
+    top: 25vh;
+    z-index: 15;
+    left: 12.5vw;
+}
+
+.low-tree {
+    width: 20vw;
+    height: 34vh;
+    z-index: 14;
+    top: 30vh;
+    left: 10vw;
+}
+
+.bot-tree {
+    width: 25vw;
+    height: 43vh;
+    z-index: 13;
+    top: 35vh;
+    left: 7.5vw;
+}
+
+.tree-trunk {
+    background-color: brown;
+    width: 4vw;
+    height: 7vh;
+    position: absolute;
+    left: 18vw;
+    bottom: 15vh;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 150%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 50%;
+        top: -55%;
+        left: -25%;
+    }
+}
+
+.tree-pot {
+    background: linear-gradient(to left, #7ba2f6 50%, #6b96f1 50%);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+    position: absolute;
+    width: 10vw;
+    height: 8.5vh;
+    left: 15vw;
+    bottom: 7vh;
+    box-shadow: inset 0 1.5vh 0 rgba(0,0,0,0.2);
+}
+
+.tree-pot-top {
+    width: 12vw;
+    height: 2.25vh;
+    background: linear-gradient(to left, #7ba2f6 50%, #6b96f1 50%);
+    position: absolute;
+    left: 14vw;
+    bottom: 15.5vh;
+    border-radius: 0.35em;
+}
+
+.cord {
+    width: 40%;
+    height: 1%;
+    position: absolute;
+    background-color: black;
+    left: 28%;
+    border-radius: 100vh;
+    bottom: 5%;
+    animation: plug-glow 2s linear 2s infinite alternate;
+
+    &::after {
+        width: 5%;
+        height: 350%;
+        background-color: black;
+        border-radius: 50%;
+        content: "";
+        position: absolute;
+        right: 0%;
+        top: -125%;
+        border-radius: 100% 0% 0% 100% / 50% 0% 100% 50%;
+        animation: plug-glow 2s linear 2s infinite alternate;
+    }
+
+    &::before {
+        width: 2.5%;
+        height: 75%;
+        content: "";
+        position: absolute;
+        right: -2%;
+        background-color: rgb(206, 206, 206);
+    }
+}
+
+.cord-two {
+    width: 5%;
+    height: 1%;
+    position: absolute;
+    background-color: black;
+    left: 23.5%;
+    border-radius: 100vh;
+    bottom: 6.35%;
+    animation: plug-glow 2s linear 2s infinite alternate;
+    transform: rotate(20deg);
+}
+
+@keyframes plug-glow {
+    100% {
+        box-shadow: 0 0 5vh 0.5vh rgb(0,204,255);
+    }
+}

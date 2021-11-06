@@ -1,0 +1,67 @@
+.lightning-box {
+    width: 7%;
+    height: 25%;
+    position: absolute;
+    right: 25%;
+    bottom: 3%;
+    z-index: 17;
+    overflow: hidden;
+}
+
+.lightning-main {
+    background-color: rgb(0, 204, 255);
+    clip-path: polygon(43% 54%, 69% 28%, 71% 28%, 42% 56%, 28% 48%, 0% 70%, 0 68%, 28% 47%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -80%;
+    top: -40%;
+    transform: rotate(deg);
+    z-index: 18;
+    animation: lightning-one 1.5s linear 0s infinite;
+}
+
+.lightning-small-one {
+    clip-path: polygon(43% 54%, 69% 28%, 71% 28%, 42% 56%, 28% 48%, 0% 70%, 0 68%, 28% 47%);
+    background-color: rgb(0, 204, 255);
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: -30%;
+    top: -3%;
+    transform: rotate(90deg);
+    animation: lightning-two 1s linear 0s infinite;
+}
+
+.lightning-small-two {
+    clip-path: polygon(43% 54%, 69% 28%, 71% 28%, 42% 56%, 28% 48%, 0% 70%, 0 68%, 28% 47%);
+    background-color: rgb(0, 204, 255);
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: -30%;
+    top: -5%;
+    transform: rotate(45deg);
+    animation: lightning-three 1s linear 0.25s infinite;
+}
+
+@keyframes lightning-two {
+    100% {
+        top: -30%;
+        right: 80%;
+    }
+}
+
+@keyframes lightning-three {
+    100% {
+        top: 7%;
+        right: 100%;
+    }
+}
+
+@keyframes lightning-one {
+    100% {
+        right: 130%;
+        top: 100%;
+    }
+}

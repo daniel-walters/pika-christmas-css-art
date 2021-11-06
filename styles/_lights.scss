@@ -1,0 +1,211 @@
+.light {
+    height: 2vh;
+    width: 1vw;
+    position: absolute;
+    //left: 20vw;
+    //top: 45vh;
+    z-index: 19;
+    border-radius: 50%;
+}
+
+.blue {
+    background-color: rgb(0, 0, 163);
+    animation: on-blue 1.5s infinite alternate;
+    left: 20.5vw;
+}
+
+.green {
+    background-color: rgb(0, 163, 0);
+    left: 15vw;
+    animation: on-green 1.5s infinite alternate;
+}
+
+.yellow {
+    background-color: rgb(163, 163, 0);
+    left: 17.5vw;
+    animation: on-yellow 1.5s infinite alternate;
+}
+
+.red {
+    background-color: rgb(163, 0, 0);
+    left: 50%;
+    animation: on-red 1.5s infinite alternate;
+}
+
+#top-one {
+    left: 21vw;
+    top: 25vh;
+}
+
+#top-two {
+    left: 18vw;
+    top: 26.5vh;
+}
+
+#top-three {
+    left: 22vw;
+    top: 31vh;
+}
+
+#top-four {
+    left: 19vw;
+    top: 32.5vh;
+}
+
+#top-five {
+    left: 16vw;
+    top: 33vh;
+}
+
+#top-mid-one {
+    left: 23vw;
+    top: 37vh;
+}
+
+#top-mid-two {
+    left: 20.5vw;
+    top: 39.5vh;
+}
+
+#top-mid-three {
+    left: 17.5vw;
+    top: 40.5vh;
+}
+
+#top-mid-four {
+    left: 15vw;
+    top: 41vh;
+}
+
+#top-mid-five {
+    left: 23vw;
+    top: 44vh;
+}
+
+#top-mid-six {
+    left: 20.5vw;
+    top: 45.5vh;
+}
+
+#top-mid-seven {
+    left: 17.5vw;
+    top: 47vh;
+}
+
+#top-mid-eight {
+    left: 14.5vw;
+    top: 47vh;
+}
+
+#bot-mid-one {
+    left: 25vw;
+    top: 51vh;
+}
+
+#bot-mid-two {
+    left: 22vw;
+    top: 53.5vh;
+}
+
+#bot-mid-three {
+    left: 18vw;
+    top: 54.5vh;
+}
+
+#bot-mid-four {
+    left: 14vw;
+    top: 54.5vh;
+}
+
+#bot-mid-five {
+    left: 25vw;
+    top: 56vh;
+}
+
+#bot-mid-six {
+    left: 22vw;
+    top: 58.5vh;
+}
+
+#bot-mid-seven {
+    left: 18vw;
+    top: 59.5vh;
+}
+
+#bot-mid-eight {
+    left: 14.5vw;
+    top: 59.5vh;
+}
+
+#bot-one {
+    left: 27vw;
+    top: 62vh;
+}
+
+#bot-two {
+    left: 24vw;
+    top: 65vh;
+}
+
+#bot-three {
+    left: 20vw;
+    top: 67vh;
+}
+
+#bot-four {
+    left: 16vw;
+    top: 67.5vh;
+}
+
+#bot-five {
+    left: 12vw;
+    top: 67vh;
+}
+
+#bot-six {
+    left: 27vw;
+    top: 68vh;
+}
+
+#bot-seven {
+    left: 24vw;
+    top: 71vh;
+}
+
+#bot-eight {
+    left: 19vw;
+    top: 72.5vh;
+}
+
+#bot-nine {
+    left: 14vw;
+    top: 73vh;
+}
+
+@keyframes on-blue {
+    100% {
+        background-color: rgb(150, 239, 255);
+        box-shadow: 0 0 20px 1vw rgb(0, 89, 255);
+    }
+}
+
+@keyframes on-green {
+    100% {
+        background-color: rgb(150, 255, 150);
+        box-shadow: 0 0 20px 1vw rgba(0, 255, 0, 1);
+    }
+}
+
+@keyframes on-yellow {
+    100% {
+        background-color: rgb(255, 255, 150);
+        box-shadow: 0 0 20px 1vw rgba(255,255,0, 1);
+    }
+}
+
+@keyframes on-red {
+    100% {
+        background-color: rgb(255, 150, 150);
+        box-shadow: 0 0 20px 1vw rgba(255,0,0, 1);
+    }
+}
